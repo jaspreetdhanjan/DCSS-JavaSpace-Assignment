@@ -1,0 +1,6 @@
+{
+  "javaspace-config": {
+    "hostname": "localhost",
+    "connection-time": 5000
+  }
+}

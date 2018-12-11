@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Register">
+           <VBox.margin>
+               <Insets left="50.0" top="50.0" />
+           </VBox.margin>
+           <font>
+               <Font size="47.0" />
+           </font>
+       </Text>
+       <GridPane>
+           <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="109.0" />
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="189.0" />
+           </columnConstraints>
+           <rowConstraints>
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+           </rowConstraints>
+           <VBox.margin>
+               <Insets left="50.0" top="50.0" />
+           </VBox.margin>
+          <children>
+              <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+              <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password:" GridPane.rowIndex="2" />
+              <PasswordField fx:id="confirmPasswordField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:" GridPane.rowIndex="3" />
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:" GridPane.rowIndex="4" />
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" GridPane.rowIndex="5" />
+              <TextField fx:id="firstNameField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+              <TextField fx:id="lastNameField" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+              <TextField fx:id="emailField" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" />
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" GridPane.rowIndex="1" />
+          </children>
+       </GridPane>
+       <HBox prefHeight="100.0" prefWidth="200.0">
+           <VBox.margin>
+               <Insets left="50.0" top="50.0" />
+           </VBox.margin>
+          <children>
+              <Button fx:id="registerButton" alignment="CENTER" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="Register">
+                  <HBox.margin>
+                      <Insets />
+                  </HBox.margin>
+              </Button>
+              <Button fx:id="cancelButton" mnemonicParsing="false" text="Cancel">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+              <Text fx:id="errorText" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0">
+                  <HBox.margin>
+                      <Insets left="20.0" />
+                  </HBox.margin>
+              </Text>
+          </children>
+       </HBox>
+   </children>
+</VBox>
